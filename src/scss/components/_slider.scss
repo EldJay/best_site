@@ -1,0 +1,37 @@
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: auto !important;
+  flex-shrink: 0;
+  padding-right: 0;
+}
+
+/* DESKTOP ≥1280px */
+@media (min-width: 1280px) {
+  .swiper-slide {
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+  .swiper-slide {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    padding: 10px 0;
+  }
+
+  .swiper-slide {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,64 @@
+.cards {
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.card svg {
+  width: 100px;
+  height: 100px;
+  color: var(--text);
+}
+
+.card p {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+  color: var(--text);
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .card svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 0 20px;
+  }
+
+  .card {
+    gap: 14px;
+  }
+
+  .card svg {
+    width: 78px;
+    height: 78px;
+  }
+
+  .card p {
+    font-size: 22px;
+  }
+}

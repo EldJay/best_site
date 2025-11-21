@@ -1,0 +1,27 @@
+<form class="form">
+    <label>
+        Имя
+        <input type="text" placeholder="Введите имя">
+    </label>
+
+    <label>
+        Телефон
+        <input type="text" placeholder="+7 ___ ___">
+    </label>
+
+    <label>
+        Комментарий
+        <textarea placeholder="Ваш вопрос"></textarea>
+    </label>
+
+    @@include('../components/_button.html', {
+    "padding-x": "70px",
+    "padding-y": "25px",
+    "border-color": "none",
+    "tittle": "<b>Отправить</b>",
+    "background-color": "transparent",
+    "font-size": "20px",
+    "background-image": "linear-gradient(90deg, #F432A7 0%, #7A00FF 100%)"
+    })
+
+</form>
